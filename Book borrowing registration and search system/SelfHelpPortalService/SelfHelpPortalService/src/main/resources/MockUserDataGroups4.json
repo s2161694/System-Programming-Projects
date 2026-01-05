@@ -1,0 +1,158 @@
+[
+  {
+    "username": "JackTheRipper",
+    "password": "catch me if u can",
+    "email": "jack.tr@hindenburg.ac.uk",
+    "role": "AdminStaff"
+  },
+  {
+    "username": "Barbie",
+    "password": "I like pink muffs and I cannot lie",
+    "email": "barb78916@hindenburg.ac.uk",
+    "role": "Student"
+  },
+  {
+    "username": "JSON Derulo",
+    "password": "Desrouleaux",
+    "email": "json.d@hindenburg.ac.uk",
+    "role": "TeachingStaff"
+  },
+  {
+    "username": "BananaMan",
+    "password": "peelinggood123",
+    "email": "bananaman@hindeburg.ac.uk",
+    "role": "TeachingStaff"
+  },
+  {
+    "username": "CaptainObvious",
+    "password": "itsapassword",
+    "email": "captainobvious@hindeburg.ac.uk",
+    "role": "Student"
+  },
+  {
+    "username": "DrunkPanda",
+    "password": "bamboozled2022",
+    "email": "drunkpanda@hindeburg.ac.uk",
+    "role": "AdminStaff"
+  },
+  {
+    "username": "MrBeanFan",
+    "password": "beanstalk2023",
+    "email": "mrbeanfan@hindeburg.ac.uk",
+    "role": "Student"
+  },
+  {
+    "username": "TheTickFan",
+    "password": "tickingtimebomb",
+    "email": "thetickfan@hindeburg.ac.uk",
+    "role": "TeachingStaff"
+  },
+  {
+    "username": "SillySausage",
+    "password": "linkstowishes",
+    "email": "sillysausage@hindeburg.ac.uk",
+    "role": "AdminStaff"
+  },
+  {
+    "username": "SuperSpud",
+    "password": "mashattack123",
+    "email": "superspud@hindeburg.ac.uk",
+    "role": "TeachingStaff"
+  },
+  {
+    "username": "DoctorWhoops",
+    "password": "timetravelerror",
+    "email": "doctorwhoops@hindeburg.ac.uk",
+    "role": "Student"
+  },
+  {
+    "username": "TheIncredibleSulk",
+    "password": "angermanagement",
+    "email": "theincrediblesulk@hindeburg.ac.uk",
+    "role": "AdminStaff"
+  },
+  {
+    "username": "TheJoker",
+    "password": "laughtertherapy",
+    "email": "thejoker@hindeburg.ac.uk",
+    "role": "Student"
+  },
+  {
+    "username": "PranksterPete",
+    "password": "gigglesgalore",
+    "email": "pranksterpete@hindeburg.ac.uk",
+    "role": "TeachingStaff"
+  },
+  {
+    "username": "SarcasmMaster",
+    "password": "notimpressed2023",
+    "email": "sarcasmmaster@hindeburg.ac.uk",
+    "role": "AdminStaff"
+  },
+  {
+    "username": "EinsteinFan123",
+    "password": "geniusmind456",
+    "email": "einsteinfan123@hindeburg.ac.uk",
+    "role": "TeachingStaff"
+  },
+  {
+    "username": "SpongeBobFan",
+    "password": "pineapple123",
+    "email": "spongebobfan@hindeburg.ac.uk",
+    "role": "Student"
+  },
+  {
+    "username": "PicassoArtiste",
+    "password": "cubism202",
+    "email": "picassoartiste@hindeburg.ac.uk",
+    "role": "AdminStaff"
+  },
+  {
+    "username": "PotterHead321",
+    "password": "expelliarmus789",
+    "email": "potterhead321@hindeburg.ac.uk",
+    "role": "Student"
+  },
+  {
+    "username": "ShakespeareFan",
+    "password": "romeoandjuliet",
+    "email": "shakespearefan@hindeburg.ac.uk",
+    "role": "TeachingStaff"
+  },
+  {
+    "username": "BatmanFanatic",
+    "password": "darkknight2020",
+    "email": "batmanfanatic@hindeburg.ac.uk",
+    "role": "AdminStaff"
+  },
+  {
+    "username": "PikachuFan23",
+    "password": "thunderbolt456",
+    "email": "pikachufan23@hindeburg.ac.uk",
+    "role": "TeachingStaff"
+  },
+  {
+    "username": "HermioneGranger",
+    "password": "magicwand123",
+    "email": "hermionegranger@hindeburg.ac.uk",
+    "role": "Student"
+  },
+  {
+    "username": "MickeyMouseFan",
+    "password": "happiestplace789",
+    "email": "mickeymousefan@hindeburg.ac.uk",
+    "role": "AdminStaff"
+  },
+  {
+    "username": "DarthVaderFan",
+    "password": "forceawakens2022",
+    "email": "darthvaderfan@hindeburg.ac.uk",
+    "role": "TeachingStaff"
+  },
+  {
+    "username": "MonalisaLover",
+    "password": "enigmaticsmile",
+    "email": "monalisalover@hindeburg.ac.uk",
+    "role": "AdminStaff"
+  }
+]
