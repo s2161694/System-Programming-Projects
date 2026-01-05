@@ -1,0 +1,13 @@
+SELECT 
+    branches.branch,
+    (SELECT COUNT(DISTINCT title || '|' || author)
+     FROM Copies c
+     WHERE c.branch = branches.branch) AS book_count,
+    (SELECT COUNT(*)
+     FROM Customers cu
+     WHERE cu.branch = branches.branch) AS customer_count
+FROM (
+    SELECT branch FROM Copies
+    UNION
+    SELECT branch FROM Customers
+) AS branches

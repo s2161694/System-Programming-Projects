@@ -1,0 +1,13 @@
+SELECT 
+    genre,
+    subgenre,
+    (SELECT COUNT(DISTINCT l.customer)
+     FROM Loans l
+     JOIN Copies c ON l.copy = c.copy_id
+     JOIN Books b2 ON c.title = b2.title AND c.author = b2.author
+     WHERE b2.genre = category.genre AND b2.subgenre = category.subgenre) AS borrower_count,
+    (SELECT COUNT(*)
+     FROM Copies c
+     JOIN Books b2 ON c.title = b2.title AND c.author = b2.author
+     WHERE b2.genre = category.genre AND b2.subgenre = category.subgenre) AS copy_count
+FROM (SELECT DISTINCT genre, subgenre FROM Books) AS category

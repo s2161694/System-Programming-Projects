@@ -1,0 +1,22 @@
+SELECT 
+    c.cust_id,
+    (SELECT MAX(l.start)
+     FROM Loans l
+     WHERE l.customer = c.cust_id) AS last_loan_date
+FROM Customers c
+WHERE EXISTS (
+    SELECT 1 FROM Loans l WHERE l.customer = c.cust_id
+)
+AND NOT EXISTS (
+    SELECT 1
+    FROM Loans l1
+    WHERE l1.customer = c.cust_id
+    AND EXISTS (
+        SELECT 1
+        FROM Loans l2
+        WHERE l2.customer = c.cust_id
+        AND l2.start < l1.start
+        AND (l2.loan_id NOT IN (SELECT loan FROM Returns)
+             OR (SELECT date FROM Returns WHERE loan = l2.loan_id) > l1.start)
+    )
+)

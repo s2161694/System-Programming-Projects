@@ -1,0 +1,22 @@
+SELECT 
+    b.title,
+    b.author,
+    (SELECT COUNT(*)
+     FROM Loans l
+     JOIN Copies c ON l.copy = c.copy_id
+     WHERE c.title = b.title AND c.author = b.author) AS loan_count,
+    CASE 
+        WHEN (SELECT COUNT(*)
+              FROM Loans l
+              JOIN Copies c ON l.copy = c.copy_id
+              JOIN Returns r ON l.loan_id = r.loan
+              WHERE c.title = b.title AND c.author = b.author) > 0
+        THEN (SELECT printf('%.1f', AVG(julianday(r.date) - julianday(l.start)))
+              FROM Loans l
+              JOIN Copies c ON l.copy = c.copy_id
+              JOIN Returns r ON l.loan_id = r.loan
+              WHERE c.title = b.title AND c.author = b.author)
+        ELSE (SELECT b.title FROM Books b WHERE 1=0)
+    END AS avg_length
+FROM Books b
+WHERE EXISTS (SELECT 1 FROM Copies c WHERE c.title = b.title AND c.author = b.author)

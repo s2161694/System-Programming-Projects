@@ -1,0 +1,17 @@
+SELECT 
+    c.cust_id,
+    (SELECT COUNT(*)
+     FROM Loans l
+     WHERE l.customer = c.cust_id
+       AND l.loan_id NOT IN (SELECT loan FROM Returns)) AS active_loans,
+    (SELECT COUNT(*)
+     FROM Loans l
+     JOIN Returns r ON l.loan_id = r.loan
+     WHERE l.customer = c.cust_id
+       AND r.date <= l.due) AS on_time_returns,
+    (SELECT COUNT(*)
+     FROM Loans l
+     JOIN Returns r ON l.loan_id = r.loan
+     WHERE l.customer = c.cust_id
+       AND r.date > l.due) AS late_returns
+FROM Customers c
